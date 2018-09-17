@@ -29,7 +29,8 @@
 
 #include <sys/types.h>
 
-#ifdef _MSC_VER
+#if defined(_MSC_VER) || defined(__CROSSWORKS_ARM)
+#include <stdint.h>
 #define ssize_t intptr_t
 #endif
 
