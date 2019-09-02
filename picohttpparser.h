@@ -30,6 +30,7 @@
 #include <sys/types.h>
 
 #if defined(_MSC_VER) || defined(__CROSSWORKS_ARM)
+#include <stddef.h>
 #include <stdint.h>
 #define ssize_t intptr_t
 #endif
